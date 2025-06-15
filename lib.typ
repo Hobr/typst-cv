@@ -102,9 +102,9 @@
   // 文字
   set text(
     // 字体
-    font: (en_TimesNewRoman, zh_宋体, zh_黑体),
+    font: (fonts.en_TimesNewRoman, fonts.zh_宋体, fonts.zh_黑体),
     // 语言
-    lang: "zh-CN",
+    lang: "zh",
     // 地区
     region: "cn",
     // 字号
@@ -114,9 +114,9 @@
   set par(
     // 两侧对齐
     justify: true,
-    // 行首缩进
-    indent: 2em,
+    // 首行缩进
+    first-line-indent: 2em,
     // 行距
-    lineHeight: 1.5,
+    leading: 1.2em,
   )
 }
