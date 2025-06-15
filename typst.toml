@@ -1,0 +1,16 @@
+[package]
+name = "cv"
+version = "0.1.0"
+compiler = "0.13.1"
+entrypoint = "lib.typ"
+repository = "https://github.com/Hobr/typst-cv"
+authors = ["Hobr <mail@hobr.site>"]
+license = "GPL-3.0"
+description = "个人的简历模板"
+keywords = ["cv"]
+categories = ["cv"]
+
+[template]
+path = "template"
+entrypoint = "main.typ"
+thumbnail = "thumbnail.png"
