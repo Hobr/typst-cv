@@ -1,5 +1,6 @@
 // 正文伪粗体
-#import "@preview/cuti:0.2.1": show-cn-fakebold
+#import "@preview/cuti:0.3.0": show-cn-fakebold
+#show: show-cn-fakebold
 
 // 字体
 #let fonts = (
