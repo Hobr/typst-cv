@@ -14,6 +14,8 @@
 
 // 字号
 #let fontSize = (
+  初号: 42pt,
+  小初: 36pt,
   一号: 26pt,
   小一: 24pt,
   二号: 22pt,
@@ -27,9 +29,11 @@
   六号: 7.5pt,
   小六: 6.5pt,
   七号: 5.5pt,
+  八号: 5pt,
 )
 
-#let cv(
+// 信息
+#let info(
   // 名字
   name: "姓名",
   // 邮箱
@@ -42,48 +46,6 @@
   photo: none,
   // 个人简介
   desc: [],
-  /*
-  教育经历
-    (
-      school: "学校",
-      start: "开始时间",
-      end: "结束时间",
-      degree: "学位",
-      major: "专业",
-    ),
-  */
-  edu: (),
-  /*
-  技能
-    [技能1],
-    [技能2],
-    [技能3],
-  */
-  skill: (),
-  /*
-  项目
-    (
-      name: "项目名称",
-      type: "项目类型",
-      start: "开始时间",
-      end: "结束时间",
-      desc: [项目描述],
-      link: "项目链接",
-    ),
-  */
-  project: (),
-  /*
-  经历
-    (
-      company: "公司名称",
-      position: "职位",
-      start: "开始时间",
-      end: "结束时间",
-      desc: [工作描述],
-    ),
-  */
-  experience: (),
-  // 正文
   body,
 ) = {
   // 文档
@@ -120,4 +82,22 @@
     // 行距
     leading: 1.2em,
   )
+
+  table(rows: 3, columns: 4, align: left, [])
 }
+
+// 项
+#let item(
+  title: "",
+  content: [],
+) = { }
+
+// 件
+#let event(
+  title: "",
+  type: none,
+  start: none,
+  end: none,
+  desc: [],
+  link: none,
+) = { }
