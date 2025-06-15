@@ -1,7 +1,7 @@
 {
   description = "Typst Shell";
   inputs = {
-    nixpkgs.url = "nixpkgs";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     flake-utils.url = "github:numtide/flake-utils";
   };
 
@@ -24,6 +24,7 @@
               typst
               typstyle
               tinymist
+              pre-commit
             ];
           };
       }
